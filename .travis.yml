@@ -1,0 +1,36 @@
+sudo: required
+
+dist: trusty
+
+language: rust
+
+cache: cargo
+
+addons:
+  apt:
+    update: true
+    packages:
+    - libfontconfig1-dev
+    - libgraphite2-dev
+    - libharfbuzz-dev
+    - libicu-dev
+
+
+
+
+
+
+before_script:
+  - cargo install tectonic
+
+script:
+  - mkdir _build
+  - tectonic -output-directory _build garciparedes-cv.tex
+
+deploy:
+  provider: releases
+  file:
+    - _build/garciparedes-cv.pdf
+  skip_cleanup: true
+  on:
+    tags: true

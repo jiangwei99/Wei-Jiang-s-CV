@@ -1,6 +1,6 @@
 # [Curriculum Vitae](https://garciparedes.me/curriculum-vitae)
 
-https://jiangwei99.github.io/Wei-Jiang-s-CV/
+visit in https://jiangwei99.github.io/Wei-Jiang-s-CV/
 
 ## Authors
   - García Prado, Sergio: [@garciparedes](http://garciparedes.me)
